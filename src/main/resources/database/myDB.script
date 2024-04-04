@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 752
+SET FILES CHECK 1694
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -58,3 +58,6 @@ INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1
 INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',1911608110,'SA','2024-04-02 21:58:18.505100',2,'1')
 INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',1103835454,'SA','2024-04-02 21:58:18.526134',3,'1')
 INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',553901455,'SA','2024-04-02 21:58:18.547604',8,'1')
+INSERT INTO EVENTS VALUES('84a3c04d-3931-4c22-a19c-116f620eafd4','Rocketseat NLW','Aprenda Java de forma gratuita','rocketseat-nlw',500)
+INSERT INTO EVENTS VALUES('a6eedfc9-997b-4a7f-874e-8b6b7c1d73dd','Rocketseat NLW Unite','Aprenda Javariasva de forma gratuita!','rocketseat-nlw-unite',1000)
+INSERT INTO ATTENDEES VALUES('a6eedfc9-997b-4a7f-874e-8b6b7c1d73dd','Thauler','thauler@gmail.com', 'a6eedfc9-997b-4a7f-874e-8b6b7c1d73dd', CURRENT_TIMESTAMP)
