@@ -1,4 +1,4 @@
-package rocketseat.com.passins.domain.exceptions;
+package rocketseat.com.passins.domain.event.exceptions;
 
 public class EventNotFoundException extends RuntimeException {
 
